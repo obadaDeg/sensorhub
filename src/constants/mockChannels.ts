@@ -1,0 +1,40 @@
+import { Channel } from "@/types/channel";
+
+export const mockChannels: Channel[] = [
+  {
+    id: "2875636",
+    name: "Farm Sensor",
+    author: "mwa0000037188024",
+    access: "Private",
+    created: "25 days ago",
+    entries: 1243,
+    fields: 8,
+    lastUpdate: "5 minutes ago",
+    description: "Temperature and humidity sensors for the north field",
+    tags: ["agriculture", "temperature", "humidity"],
+  },
+  {
+    id: "2875637",
+    name: "Weather Station",
+    author: "mwa0000037188024",
+    access: "Public",
+    created: "14 days ago",
+    entries: 4322,
+    fields: 6,
+    lastUpdate: "1 minute ago",
+    description: "Local weather monitoring station",
+    tags: ["weather", "wind", "precipitation"],
+  },
+  {
+    id: "2875638",
+    name: "Soil Moisture",
+    author: "mwa0000037188024",
+    access: "Private",
+    created: "32 days ago",
+    entries: 2150,
+    fields: 4,
+    lastUpdate: "10 minutes ago",
+    description: "Soil moisture sensors across farm plots",
+    tags: ["soil", "moisture", "agriculture"],
+  },
+];
