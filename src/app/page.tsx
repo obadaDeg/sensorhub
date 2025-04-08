@@ -26,7 +26,6 @@ export default function Home() {
     console.log('Create new channel');
   }, []);
 
-  // Filter channels based on search query
   const filteredChannels = channels.filter(channel => 
     channel.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     channel.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
