@@ -30,20 +30,16 @@ export default function SearchFilter({
   return (
     <div 
       className={`bg-white shadow-sm rounded-lg mb-6 p-4 transition-all duration-500 ease-in-out ${
-        isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform -translate-y-4'
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
       }`}
     >
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div className="transition-all duration-300 ease-in-out transform hover:scale-101">
-          <SearchBar 
-            placeholder="Search channels" 
-            value={searchQuery} 
-            onChange={onSearchChange} 
-          />
-        </div>
-        <div className="transition-all duration-300 ease-in-out transform hover:scale-100">
-          <ViewToggle viewMode={viewMode} setViewMode={setViewMode} />
-        </div>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <SearchBar 
+          placeholder="Search channels..." 
+          value={searchQuery} 
+          onChange={onSearchChange} 
+        />
+        <ViewToggle viewMode={viewMode} setViewMode={setViewMode} />
       </div>
     </div>
   );

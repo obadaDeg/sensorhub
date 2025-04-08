@@ -1,4 +1,3 @@
-// components/ui/ViewToggle.tsx
 import { Grid, List } from 'lucide-react';
 import { ViewMode } from '../../types';
 
@@ -8,22 +7,29 @@ interface ViewToggleProps {
 }
 
 export default function ViewToggle({ viewMode, setViewMode }: ViewToggleProps) {
+  const commonClasses = 'p-2 rounded-md transition-all duration-200';
+
   return (
-    <div className="flex items-center space-x-4">
-      <span className="text-sm text-gray-500">View:</span>
+    <div className="flex space-x-2">
       <button
         onClick={() => setViewMode('grid')}
-        className={`p-1.5 rounded ${
-          viewMode === 'grid' ? 'bg-emerald-100 text-emerald-600' : 'text-gray-400 hover:text-gray-500'
+        className={`${commonClasses} ${
+          viewMode === 'grid'
+            ? 'bg-emerald-100 text-emerald-700'
+            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
         }`}
+        aria-label="Grid view"
       >
         <Grid size={20} />
       </button>
       <button
         onClick={() => setViewMode('list')}
-        className={`p-1.5 rounded ${
-          viewMode === 'list' ? 'bg-emerald-100 text-emerald-600' : 'text-gray-400 hover:text-gray-500'
+        className={`${commonClasses} ${
+          viewMode === 'list'
+            ? 'bg-emerald-100 text-emerald-700'
+            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
         }`}
+        aria-label="List view"
       >
         <List size={20} />
       </button>
