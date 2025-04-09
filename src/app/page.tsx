@@ -33,7 +33,7 @@ export default function Home() {
   );
 
   return (
-    <Layout title="SensorHub | My Channels">
+    <Layout title="IoTLinker | My Channels">
       <ChannelHeader onNewChannel={handleNewChannel} />
       <SearchFilter
         viewMode={viewMode} 

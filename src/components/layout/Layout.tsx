@@ -9,7 +9,7 @@ interface LayoutProps {
   title?: string;
 }
 
-export default function Layout({ children, title = 'SensorHub | Your IoT Data Platform' }: LayoutProps) {
+export default function Layout({ children, title = 'IoTLinker | Your IoT Data Platform' }: LayoutProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Head>

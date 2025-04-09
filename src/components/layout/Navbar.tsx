@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <span className="text-2xl font-bold text-emerald-600 transition-all duration-300 hover:text-emerald-800 transform hover:scale-105">
-                SensorHub
+                IoTLinker
               </span>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center">
